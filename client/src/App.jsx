@@ -6,6 +6,7 @@ import Dashboard from "./components/pages/Dashboard"
 import Singin from "./components/pages/Singin"
 import Singup from "./components/pages/Singup"
 import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/sign-in" element={<Singin />}/>
         <Route path="/sign-up" element={<Singup />}/>
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

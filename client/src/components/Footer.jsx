@@ -1,0 +1,72 @@
+import { Footer } from "flowbite-react";
+import React from "react";
+import { Link } from "react-router-dom";
+
+const FooterCom = () => {
+  return (
+    <Footer className="border border-t-8 border-teal-500" container>
+      <div className="w-full max-w-7xl mx-auto">
+        <div className="grid w-full justify-between sm:flex md:grid-cols-1">
+          <div className="mt-5">
+            <Link
+              to="/"
+              className="self-center whitespace-nowrap text-lg sm:text-xl font-semibold dark:text-white"
+            >
+              <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
+                Janidu's
+              </span>
+              Blog
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6">
+            <div>
+              <Footer.Title title="About" />
+              <Footer.LinkGroup col>
+                <Footer.Link
+                  href="/about"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {/* The rel=”noopener noreferrer” is a part of HTML code used for links. It makes sure that when you click a link, the new page cannot control the original page. This protects your privacy and security.  */}
+                  Janidu's Blog
+                </Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+
+            <div>
+              <Footer.Title title="Follow us" />
+              <Footer.LinkGroup col>
+                <Footer.Link
+                  href="https://github.com/janidu98"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github
+                </Footer.Link>
+                <Footer.Link
+                  href="https://www.linkedin.com/feed/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Linkedin
+                </Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+          </div>
+        </div>
+
+        <Footer.Divider />
+        <div>
+          <Footer.Copyright
+            href="#"
+            by="Janidu's blog"
+            year={new Date().getFullYear()}
+          />
+        </div>
+      </div>
+    </Footer>
+  );
+};
+
+export default FooterCom;
