@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Singup = () => {
   return (
     <div className='min-h-screen mt-20'>
-      <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5">
+      <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-6">
 
         {/* left side */}
         <div className="flex-1">
